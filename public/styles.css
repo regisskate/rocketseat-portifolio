@@ -1,0 +1,178 @@
+@import "https://fonts.googleapis.com/css?family=Pacifico&display=swap";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+   background:  #7889ec;
+  
+}
+header {
+    padding: 32px ;
+    border-bottom: 1px solid #333;
+    background: rgba(0,0,0,0.1);
+
+}
+header img {
+   margin-top: 10px;
+    height: 15px;
+    border: 1px solid gree
+}
+.links {
+    text-align: center;
+    
+}
+.links a {
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 8px;
+    text-decoration: none;
+}
+.links a:hover {
+    color: darkturquoise;
+    transition:color 700ms ;
+}
+
+#wrapper {
+    text-align: center;
+    padding: 32px
+}
+
+#wrapper img {
+    border-radius:50% ;
+    border:2px solid rgb(255, 0, 0);
+    margin-bottom: 32px;
+    height: 250px;
+}
+
+#wrapper h1 {
+    font-size: 42px;
+    line-height: 52px; 
+    font-family: 'Pacifico'; 
+    color: rgb(51, 10, 161);
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+#wrapper p {
+    max-width: 500px;
+    margin: 15px auto;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#wrapper p a {
+    color: chartreuse;
+}
+
+#links-footer a {
+    
+    border-bottom:1px solid rgb(127, 255, 0);
+    margin: 0 10px;
+}
+
+/*===CARDS===*/
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: rgb(117, 69, 156);
+    border: 1px solid rgb(255, 0, 0);
+    display: grid;
+    cursor: pointer;
+}
+
+.card__image-container img {
+    width: 100%;
+}
+
+.card__content,
+.card__info {
+    padding: 24px;
+}
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.card__prince {
+    background-color: rgb(118, 110, 185);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid rgb(4, 2, 20);
+}
+
+/*===MODAL===*/
+.modal-overlay {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* === modal.active === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+/* === Featured === */
+.featured-wrapper.card__image-container {
+    position: relative;
+}
+.featured {
+    position: absolute;
+    background: yellow;
+    color: black;
+    padding: 2px 8px;
+    position: absolute;
+    left: 5px;
+    border-radius: 16px;
+    top: -10px;
+    border:1px solid blue;
+}
